@@ -1,0 +1,23 @@
+-- once we have push all the code into the central repo 
+
+-- we have only one branch which is "main"
+
+-- so now i want to change / update my code , but without do impact to the real users .
+
+-- so , for this I ahve to create one another branch 
+
+-- create another branch by using  
+
+            git branch <branch Name>
+
+-- now move to new branch 
+
+            git checkout <branch Name>
+
+-- once u switch to the new branch , U will have all the code from the main branch (as it is whatever u have in main branch , u will have all the things in new branch also)       
+
+-- now here we want to do some update in the code so , change the content in the index.html page , remember u are in new branch and doing some update to the code 
+
+-- so now do commit this changes 
+
+-- if u r using vs code , then click on source control (icon 3rd one in panel) , 
