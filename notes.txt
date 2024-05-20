@@ -46,3 +46,27 @@
          git merge < name of branch that u want to merge > with main 
 
          eg : git merge feature
+
+
+-- but this is not a procedure , so first u have to show the code changes to ur higher authority people 
+
+-- for this we have to make "Pull Request"
+
+-- before creating the PR , if we check in the github , we have only one branch , but we have 2 branches in our local system and we have one branch in central
+
+--  so first move this brnach to central and then create PR 
+
+-- to push our branch to central 
+
+              git push --set-upstream origin <branch name>
+
+
+-- it will push our branch to central 
+
+-- now do refresh in browser and check 
+
+-- u will see the branches
+
+-- now go to github and c.o pull request 
+
+-- 
