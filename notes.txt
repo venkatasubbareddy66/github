@@ -1,0 +1,173 @@
+-- once we have push all the code into the central repo 
+
+-- we have only one branch which is "main"
+
+-- so now i want to change / update my code , but without do impact to the real users .
+
+-- so , for this I ahve to create one another branch 
+
+-- create another branch by using  
+
+            git branch <branch Name>
+
+-- now move to new branch 
+
+            git checkout <branch Name>
+
+-- once u switch to the new branch , U will have all the code from the main branch (as it is whatever u have in main branch , u will have all the things in new branch also)       
+
+-- now here we want to do some update in the code so , change the content in the index.html page , remember u are in new branch and doing some update to the code 
+
+-- so now do commit this changes 
+
+-- if u r using vs code , then click on source control (icon 3rd one in panel) , click on (+) and once u done and click on tick sysmbol and add message to ur commit .
+
+-- now once u do commit , these changes will do reflce to ur new branch only , not in the main branch 
+
+        do git log 
+
+
+-- now do shift to the main branch , by using < git checkout main>
+
+-- u will see ur old code but not new code coz' we have create new brach and commit to those branch 
+
+-- now we have to do deploy our new update code to the main branch , so we have to do merging here 
+
+-- before that we have to check what are the things that we have changes so to know that 
+
+          git diff < new branch name >
+
+-- to get out of it press 'Q'
+
+-- now we want to merge our new branch to main branch 
+
+-- go to main branch and 
+
+         git merge < name of branch that u want to merge > with main 
+
+         eg : git merge feature
+
+
+-- but this is not a procedure , so first u have to show the code changes to ur higher authority people 
+
+-- for this we have to make "Pull Request"
+
+-- before creating the PR , if we check in the github , we have only one branch , but we have 2 branches in our local system and we have one branch in central
+
+--  so first move this brnach to central and then create PR 
+
+-- to push our branch to central 
+
+              git push --set-upstream origin <branch name>
+
+
+-- it will push our branch to central 
+
+-- now do refresh in browser and check 
+
+-- u will see the branches
+
+-- now go to github and c.o pull request 
+
+-- u can add review people to see ur changes in code , once the agreed then they will merge with main branch 
+
+-- create pull request 
+
+-- now do merge request coz' we do not have any people to review 
+
+--  do merge 
+
+-- if u check in the browser u will see all changes in ur code
+
+-- here u can able to see change ur codes in central not in local 
+
+--  so do git pull to see all the central changes in the local also 
+
+-- as of now it is ok fine 
+
+-- now sometime the conflicts will happen i.e , u have did changes in main branch and also did same changes on same line in the new branch also , this will get confusion to which one github have to take 
+
+-- so for this create another new branch2
+
+-- once u create new branch go to new branch and change some code and do commit this changes 
+
+-- now go to main branch and do the changes in the same line which u have changes in new branch 
+
+-- now try to change to new branch it will gives u error 
+
+ error: Your local changes to the following files would be overwritten by checkout:
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+-- so now do commit this 
+
+       Git add .
+
+       Git commit -m "message"
+
+-- now do change to another branch 
+
+-- now we have to merge all the changes from main branch to new branch2 
+
+           Git merge main
+
+-- if u r using vs code it will ask u to select options , so select option according to ur use cases 
+
+-- c.o accectpt both for now , u can do as ur wish 
+
+-- we have merged conflicts , so our repo has to know , we did this so do commit this 
+
+-- so as of now we have merged our main branch to new feature ,
+
+-- so now all the things that we have done here to push main branch in central repo 
+
+-- so push new branch to central 
+
+         git push --set-upstream origin <branch name >
+
+-- now go to central n do refresh 
+
+-- now do create pull request process 
+
+
+
+
+
+
+----------------- merging 3 types 
+
+1 fast forwarding : in this type u did not change any thing in the main branch and did changes only in the new branches , 
+
+       - then u did directly git merge < branch name> from main branch
+
+
+2 3 way merging : in the type u did change in one file in main branch and also u did change in another branch in another file , so once u commit , then do merge 
+
+
+3 merge conflict : when u do the changes on same file in both branches 
+
+
+
+
+
+
+-------------
+
+-- create branch 
+
+-- switch to new branch 
+
+-- do the changes 
+
+-- commit the changes 
+
+-- merge the main to the current branch
+
+-- fix if any conflicts
+
+-- push the changes 
+
+-- create pull request 
+
+        
