@@ -20,4 +20,11 @@
 
 -- so now do commit this changes 
 
--- if u r using vs code , then click on source control (icon 3rd one in panel) , 
+-- if u r using vs code , then click on source control (icon 3rd one in panel) , click on tick sysmbol and add message to ur commit .
+
+-- now once u do commit , these changes will do reflce to ur new branch only , not in the main branch 
+
+        do git log 
+
+
+-- now do shift to the main branch , by using < git checkout main>
