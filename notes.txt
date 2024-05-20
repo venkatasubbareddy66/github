@@ -69,4 +69,16 @@
 
 -- now go to github and c.o pull request 
 
--- 
+-- u can add review people to see ur changes in code , once the agreed then they will merge with main branch 
+
+-- create pull request 
+
+-- now do merge request coz' we do not have any people to review 
+
+--  do merge 
+
+-- if u check in the browser u will see all changes in ur code
+
+-- here u can able to see change ur codes in central not in local 
+
+--  so do git pull to see all the central changes in the local also 
