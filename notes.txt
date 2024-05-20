@@ -28,3 +28,13 @@
 
 
 -- now do shift to the main branch , by using < git checkout main>
+
+-- u will see ur old code but not new code coz' we have create new brach and commit to those branch 
+
+-- now we have to do deploy our new update code to the main branch , so we have to do merging here 
+
+-- before that we have to check what are the things that we have changes so to know that 
+
+          git diff < new branch name >
+
+--           
