@@ -1,0 +1,72 @@
+-- once we have push all the code into the central repo 
+
+-- we have only one branch which is "main"
+
+-- so now i want to change / update my code , but without do impact to the real users .
+
+-- so , for this I ahve to create one another branch 
+
+-- create another branch by using  
+
+            git branch <branch Name>
+
+-- now move to new branch 
+
+            git checkout <branch Name>
+
+-- once u switch to the new branch , U will have all the code from the main branch (as it is whatever u have in main branch , u will have all the things in new branch also)       
+
+-- now here we want to do some update in the code so , change the content in the index.html page , remember u are in new branch and doing some update to the code 
+
+-- so now do commit this changes 
+
+-- if u r using vs code , then click on source control (icon 3rd one in panel) , click on tick sysmbol and add message to ur commit .
+
+-- now once u do commit , these changes will do reflce to ur new branch only , not in the main branch 
+
+        do git log 
+
+
+-- now do shift to the main branch , by using < git checkout main>
+
+-- u will see ur old code but not new code coz' we have create new brach and commit to those branch 
+
+-- now we have to do deploy our new update code to the main branch , so we have to do merging here 
+
+-- before that we have to check what are the things that we have changes so to know that 
+
+          git diff < new branch name >
+
+-- to get out of it press 'Q'
+
+-- now we want to merge our new branch to main branch 
+
+-- go to main branch and 
+
+         git merge < name of branch that u want to merge > with main 
+
+         eg : git merge feature
+
+
+-- but this is not a procedure , so first u have to show the code changes to ur higher authority people 
+
+-- for this we have to make "Pull Request"
+
+-- before creating the PR , if we check in the github , we have only one branch , but we have 2 branches in our local system and we have one branch in central
+
+--  so first move this brnach to central and then create PR 
+
+-- to push our branch to central 
+
+              git push --set-upstream origin <branch name>
+
+
+-- it will push our branch to central 
+
+-- now do refresh in browser and check 
+
+-- u will see the branches
+
+-- now go to github and c.o pull request 
+
+-- 
