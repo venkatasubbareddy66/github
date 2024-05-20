@@ -37,4 +37,12 @@
 
           git diff < new branch name >
 
---           
+-- to get out of it press 'Q'
+
+-- now we want to merge our new branch to main branch 
+
+-- go to main branch and 
+
+         git merge < name of branch that u want to merge > with main 
+
+         eg : git merge feature
